@@ -73,6 +73,7 @@ function myFunction() {
 myFunction();
 */
 // 1.7 - What's my value? (Part 7)
+/*
 let a = 1;
 
 function myFunction() {
@@ -91,3 +92,29 @@ function myFunction(a) {
 let b = 2;
 
 myFunction(b); // A : 2
+
+*/
+
+// 1.9 - Whats my value?
+/*
+const a = 1;
+
+function myFunction() {
+  a = 2;
+}
+
+myFunction(a); // A : TypeError: Assignment to constant variable.
+*/
+// 2.0 - Whats my value?
+const a = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+function myFunction() {
+  a.firstName = 'Jane';
+}
+
+myFunction();
+
+console.log(a); // A : { firstName: 'Jane', lastName: 'Doe' }
